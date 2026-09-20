@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathon Management System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>HackHub</h1>
+        <p>Hackathon Management System</p>
+    </header>
+
+    <main>
+
+        <section class="intro">
+            <h2>Manage Your Hackathon</h2>
+            <p>Create hackathons, register teams and manage participants.</p>
+        </section>
+
+        <section>
+            <h2>Available Hackathons</h2>
+
+            <div id="hackathonList" class="card-container">
+
+                <div class="card">
+                    <h3>AI Innovation Hackathon</h3>
+                    <p><strong>Date:</strong> 10 October 2026</p>
+                    <p><strong>Prize:</strong> ₹50,000</p>
+                    <p><strong>Team Size:</strong> 2 - 4 members</p>
+                </div>
+
+                <div class="card">
+                    <h3>Cyber Security Challenge</h3>
+                    <p><strong>Date:</strong> 20 October 2026</p>
+                    <p><strong>Prize:</strong> ₹30,000</p>
+                    <p><strong>Team Size:</strong> 2 - 4 members</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="form-section">
+
+            <h2>Add New Hackathon</h2>
+
+            <form id="hackathonForm">
+
+                <label for="hackathonName">Hackathon Name</label>
+                <input type="text" id="hackathonName" required>
+
+                <label for="hackathonDate">Date</label>
+                <input type="date" id="hackathonDate" required>
+
+                <label for="hackathonPrize">Prize Amount</label>
+                <input type="number" id="hackathonPrize" required>
+
+                <label for="teamSize">Maximum Team Size</label>
+                <input type="number" id="teamSize" required>
+
+                <button type="submit">Add Hackathon</button>
+
+            </form>
+
+        </section>
+
+        <section class="form-section">
+
+            <h2>Register Your Team</h2>
+
+            <form id="teamForm">
+
+                <label for="teamName">Team Name</label>
+                <input type="text" id="teamName" required>
+
+                <label for="leaderName">Team Leader</label>
+                <input type="text" id="leaderName" required>
+
+                <label for="member1">Member 1</label>
+                <input type="text" id="member1" required>
+
+                <label for="member2">Member 2</label>
+                <input type="text" id="member2">
+
+                <label for="selectedHackathon">Hackathon</label>
+
+                <select id="selectedHackathon" required>
+                    <option value="">Select Hackathon</option>
+                    <option value="AI Innovation Hackathon">
+                        AI Innovation Hackathon
+                    </option>
+                    <option value="Cyber Security Challenge">
+                        Cyber Security Challenge
+                    </option>
+                </select>
+
+                <button type="submit">Register Team</button>
+
+            </form>
+
+        </section>
+
+        <section>
+
+            <h2>Registered Teams</h2>
+
+            <div id="teamList">
+
+                <div class="team-card">
+                    <h3>Code Warriors</h3>
+                    <p><strong>Leader:</strong> Amiritha</p>
+                    <p><strong>Members:</strong> Amiritha, KC</p>
+                    <p><strong>Hackathon:</strong> AI Innovation Hackathon</p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Hackathon Management System | NoSQL Database Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
