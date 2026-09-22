@@ -67,6 +67,37 @@ h2 {
     margin-bottom: 10px;
 }
 
+.team-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.team-actions button {
+    flex: 1;
+    margin-top: 0;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.team-actions .btn-delete {
+    background-color: #b33a3a;
+}
+
+.team-actions .btn-delete:hover {
+    background-color: #8f2c2c;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.empty-note {
+    color: #666;
+    font-style: italic;
+}
+
 .form-section form {
     display: flex;
     flex-direction: column;
